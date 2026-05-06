@@ -1,0 +1,14 @@
+package com.seriesxevents.repositories;
+
+import com.seriesxevents.models.Event;
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+import java.util.List;
+
+@Repository
+public interface EventRepository extends JpaRepository<Event, Long> {
+    List<Event> findAllByOrderByEventDateDesc();
+    List<Event> findByFeaturedTrueOrderByEventDateDesc();
+    List<Event> findByCategoryOrderByEventDateDesc(String category);
+}

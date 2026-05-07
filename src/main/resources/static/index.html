@@ -719,6 +719,10 @@ async function submitContact(e) {
     if (data.success) {
       showToast(data.message, 'success');
       document.getElementById('contactForm').reset();
+      setTimeout(() => {
+    window.location.href =
+    "https://wa.me/918929830925?text=Hello%20SeriesX%20Events";
+  }, 1500);
     } else {
       if (data.data && typeof data.data === 'object') {
         Object.entries(data.data).forEach(([field, msg]) => setError(field, msg));

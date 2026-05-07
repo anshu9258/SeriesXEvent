@@ -34,8 +34,8 @@ public class ContactService {
         ContactSubmission saved = repo.save(s);
         log.info("Saved contact submission #{}", saved.getId());
 
-        emailService.sendAdminNotification(saved);
-        emailService.sendUserConfirmation(saved);
+        //emailService.sendAdminNotification(saved);
+        //emailService.sendUserConfirmation(saved);
 
         return saved;
     }

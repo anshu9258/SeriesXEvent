@@ -303,7 +303,7 @@ content="event management, concerts, DJ events, wedding events, college fest, co
   body {
     overflow-x: hidden;
   }
-
+    
   .hero {
     padding: 120px 20px 60px;
     text-align: left;
@@ -366,6 +366,92 @@ content="event management, concerts, DJ events, wedding events, college fest, co
     flex-direction: column;
     gap: 12px;
   }
+        .team-grid{
+  grid-template-columns:1fr;
+}
+
+.team-card{
+  padding:32px 24px;
+}
+}
+  .team-section{
+  padding:120px 0;
+  background:#0b0b0b;
+}
+
+.team-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:30px;
+  margin-top:60px;
+}
+
+.team-card{
+  background:#111;
+  border:1px solid rgba(255,255,255,0.08);
+  padding:40px 30px;
+  border-radius:24px;
+  transition:0.4s ease;
+  text-align:center;
+}
+
+.team-card:hover{
+  transform:translateY(-10px);
+  border-color:#d4af37;
+  box-shadow:0 15px 40px rgba(212,175,55,0.15);
+}
+
+.team-img{
+  width:90px;
+  height:90px;
+  border-radius:50%;
+  background:#d4af37;
+  color:#000;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:28px;
+  font-weight:700;
+  margin:0 auto 24px;
+}
+
+.team-card h3{
+  color:#fff;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+.team-card span{
+  color:#d4af37;
+  display:block;
+  margin-bottom:18px;
+  font-weight:600;
+}
+
+.team-card p{
+  color:#bdbdbd;
+  line-height:1.7;
+  font-size:15px;
+}
+  .section-heading{
+  text-align:center;
+  margin-bottom:40px;
+}
+
+.section-tag{
+  color:#d4af37;
+  font-size:14px;
+  letter-spacing:3px;
+  font-weight:600;
+  display:block;
+  margin-bottom:16px;
+}
+
+.section-subtitle{
+  color:#bdbdbd;
+  max-width:700px;
+  margin:0 auto;
+  line-height:1.8;
 }
 </style>
 </head>
@@ -383,6 +469,7 @@ content="event management, concerts, DJ events, wedding events, college fest, co
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
+    <li><a href="#team">Our Team</a></li>
     <li><a href="#events">Events</a></li>
     <li><a href="#contact" class="nav-cta">Let's Talk</a></li>
   </ul>
@@ -397,6 +484,7 @@ content="event management, concerts, DJ events, wedding events, college fest, co
   <a href="#about" onclick="toggleMenu()">About</a>
   <a href="#services" onclick="toggleMenu()">Services</a>
   <a href="#events" onclick="toggleMenu()">Events</a>
+  <a href="#team" onclick="toggleMenu()">Our Team</a>
   <a href="#contact" onclick="toggleMenu()">Contact</a>
 </div>
 
@@ -471,6 +559,87 @@ content="event management, concerts, DJ events, wedding events, college fest, co
       </div>
     </div>
   </div>
+</section>
+  <section class="team-section" id="team">
+
+  <div class="container">
+
+    <div class="section-heading">
+      <span class="section-tag">OUR TEAM</span>
+      <h2 class="section-title">The Creative Minds Behind SeriesX Events</h2>
+
+      <p class="section-subtitle">
+        Passionate individuals working together to create unforgettable
+        experiences, energetic events, and impactful entertainment moments.
+      </p>
+    </div>
+
+    <div class="team-grid">
+
+      <div class="team-card">
+        <div class="team-img">NT</div>
+        <h3>Nitesh Tiwari</h3>
+        <span>Co-Founder</span>
+        <p>
+          Driving innovation, coordination, and strategic planning to build
+          powerful event experiences and expand the vision of SeriesX Events.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-img">AS</div>
+        <h3>Akash Srivastava</h3>
+        <span>Artist & Singer</span>
+        <p>
+          Bringing energy, creativity, and live musical performances that
+          engage audiences and create unforgettable moments.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-img">D</div>
+        <h3>Divyansh</h3>
+        <span>Live Artist & Singer</span>
+        <p>
+          Delivering dynamic live performances and entertainment experiences
+          that elevate the atmosphere of every event.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-img">RT</div>
+        <h3>Rajat Tiwari</h3>
+        <span>Team Support</span>
+        <p>
+          Supporting event operations, coordination, and on-ground execution
+          to ensure smooth and successful event management.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-img">P</div>
+        <h3>Priya</h3>
+        <span>Marketing Head & Sales Promoter</span>
+        <p>
+          Leading brand promotions, audience engagement, and strategic
+          marketing initiatives to grow the reach of SeriesX Events.
+        </p>
+      </div>
+
+      <div class="team-card">
+        <div class="team-img">N</div>
+        <h3>Niranjan</h3>
+        <span>Editor</span>
+        <p>
+          Managing creative editing, visual storytelling, and content
+          production to deliver impactful digital and promotional media.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+
 </section>
 
 <!-- ── SERVICES ───────────────────────────────────────────────── -->
